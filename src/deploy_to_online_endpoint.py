@@ -64,7 +64,7 @@ def create_or_update_deployment(
         model=model,
         instance_type="Standard_D2as_v4",
         instance_count=1,
-        environment="azureml://registries/azureml/environments/mlflow-ubuntu20-04-py38-cpu-inference/versions/1",
+        environment="azureml://registries/azureml/environments/mlflow-model-inference/versions/20",
     )
 
     return ml_client.online_deployments.begin_create_or_update(deployment).result()
