@@ -10,8 +10,10 @@ on:
        - 'src/job.yml'
 
 permissions:
-  contents: read
+  issues: write
   pull-requests: write
+  contents: read
+  
 
 jobs:
   train-dev:
